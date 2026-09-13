@@ -3,11 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio profesional Siti Holilah — Electrical Technician, Web Developer, dan Data Administrator." />
+  <meta
+    name="description"
+    content="Portfolio profesional Siti Holilah — Electrical Technician, Web Developer, dan Data Administrator."
+  />
   <title>Siti Holilah — Portfolio</title>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet"
+  />
   <style>
     :root {
       --navy: #071525;
@@ -19,19 +25,20 @@
       --teal-soft: rgba(46, 228, 210, 0.12);
       --gold: #f0c46f;
       --line: rgba(238, 247, 247, 0.14);
-      --white: #ffffff;
-      --shadow: 0 20px 60px rgba(0, 0, 0, 0.26);
+      --shadow: 0 20px 60px rgba(0, 0, 0, 0.25);
     }
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
     html {
       scroll-behavior: smooth;
     }
     body {
       margin: 0;
+      color: var(--ink);
       background:
         radial-gradient(circle at 85% 0%, #123f55 0%, transparent 30%),
         var(--navy);
-      color: var(--ink);
       font-family: "Plus Jakarta Sans", sans-serif;
       line-height: 1.6;
     }
@@ -39,15 +46,9 @@
       color: inherit;
       text-decoration: none;
     }
-    button {
-      font: inherit;
-    }
     .container {
       width: min(1160px, calc(100% - 40px));
       margin: auto;
-    }
-    .mono {
-      font-family: "DM Mono", monospace;
     }
     .eyebrow {
       color: var(--gold);
@@ -57,14 +58,14 @@
       letter-spacing: 0.13em;
       text-transform: uppercase;
     }
-    /* NAVIGATION */
+    /* NAVIGASI */
     .navigation {
       position: sticky;
       top: 0;
       z-index: 20;
-      background: rgba(7, 21, 37, 0.8);
-      backdrop-filter: blur(18px);
       border-bottom: 1px solid var(--line);
+      background: rgba(7, 21, 37, 0.82);
+      backdrop-filter: blur(18px);
     }
     .navigation-inner {
       min-height: 76px;
@@ -77,6 +78,7 @@
       display: flex;
       align-items: center;
       gap: 12px;
+      white-space: nowrap;
       font-weight: 800;
       letter-spacing: -0.04em;
     }
@@ -85,9 +87,9 @@
       height: 35px;
       display: grid;
       place-items: center;
+      border-radius: 10px;
       color: var(--navy);
       background: var(--teal);
-      border-radius: 10px;
       font-family: "DM Mono", monospace;
       font-size: 0.78rem;
       font-weight: 700;
@@ -96,20 +98,25 @@
       display: flex;
       align-items: center;
       gap: 6px;
+      max-width: 780px;
       padding: 5px;
       overflow-x: auto;
       border: 1px solid var(--line);
       border-radius: 12px;
       background: rgba(255, 255, 255, 0.04);
+      scrollbar-width: none;
+    }
+    .tabs::-webkit-scrollbar {
+      display: none;
     }
     .tab {
-      border: 0;
-      color: var(--muted);
-      cursor: pointer;
-      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
       padding: 9px 13px;
       border-radius: 8px;
-      background: transparent;
+      color: var(--muted);
+      white-space: nowrap;
       font-size: 0.8rem;
       font-weight: 700;
       transition: 0.2s ease;
@@ -121,44 +128,43 @@
       color: var(--navy);
       background: var(--teal);
     }
-    .print-button {
-      cursor: pointer;
-      border: 1px solid var(--teal);
-      border-radius: 10px;
-      padding: 10px 14px;
-      color: var(--navy);
-      background: var(--teal);
-      font-size: 0.78rem;
-      font-weight: 800;
-      transition: 0.2s ease;
-    }
-    .print-button:hover {
-      transform: translateY(-2px);
-      background: #62f1e2;
-    }
-    /* PAGE SYSTEM */
+    /* SECTION UMUM */
     main {
-      padding: 36px 0 80px;
+      padding: 20px 0 70px;
     }
     .page {
-      display: none;
-      min-height: 760px;
-      animation: fade-up 0.35s ease both;
-    }
-    .page.active {
       display: block;
+      min-height: auto;
+      padding: 86px 0;
+      scroll-margin-top: 110px;
     }
-    @keyframes fade-up {
-      from {
-        opacity: 0;
-        transform: translateY(12px);
-      }
-      to {
-        opacity: 1;
-        transform: translateY(0);
-      }
+    .page:first-child {
+      padding-top: 20px;
     }
-    /* PROFILE */
+    .page:not(:last-child) {
+      border-bottom: 1px solid var(--line);
+    }
+    .section-heading {
+      display: flex;
+      justify-content: space-between;
+      align-items: end;
+      gap: 20px;
+      margin-bottom: 30px;
+    }
+    .section-heading h2 {
+      max-width: 720px;
+      margin: 8px 0 0;
+      font-size: clamp(2rem, 5vw, 3.8rem);
+      line-height: 0.95;
+      letter-spacing: -0.07em;
+    }
+    .section-note {
+      max-width: 330px;
+      margin: 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+    }
+    /* PROFIL */
     .profile-grid {
       display: grid;
       grid-template-columns: 1.2fr 0.8fr;
@@ -167,12 +173,12 @@
     }
     .hero-card {
       position: relative;
-      overflow: hidden;
-      min-height: 550px;
-      padding: clamp(30px, 6vw, 70px);
+      min-height: 570px;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
+      padding: clamp(30px, 6vw, 70px);
+      overflow: hidden;
       border: 1px solid var(--line);
       border-radius: 24px;
       background:
@@ -250,7 +256,6 @@
     .portrait-card,
     .info-card,
     .skill-card,
-    .project-card,
     .experience-card,
     .education-card {
       border: 1px solid var(--line);
@@ -258,11 +263,12 @@
       background: rgba(16, 43, 67, 0.68);
     }
     .portrait-card {
-      min-height: 310px;
+      min-height: 390px;
       overflow: hidden;
       background:
-        linear-gradient(0deg, rgba(7, 21, 37, 0.62), transparent),
-        url("https://framerusercontent.com/images/IKd8zo82Rx8oU160TJKoqr4sAs.jpg?width=1192&height=1321&kb=102") center 28% / cover;
+        linear-gradient(0deg, rgba(7, 21, 37, 0.58), transparent 55%),
+        url("https://framerusercontent.com/images/aqyVSJEfjGyZzgzQ232ZenDUTA.png?width=1192&height=1320&kb=549")
+        center center / cover;
     }
     .info-card {
       padding: 26px;
@@ -323,35 +329,15 @@
       font-size: 0.68rem;
       font-weight: 700;
     }
-    /* SHARED SECTION */
-    .section-heading {
-      display: flex;
-      justify-content: space-between;
-      align-items: end;
-      gap: 20px;
-      margin: 10px 0 28px;
-    }
-    .section-heading h2 {
-      max-width: 700px;
-      margin: 8px 0 0;
-      font-size: clamp(2rem, 5vw, 3.8rem);
-      line-height: 0.95;
-      letter-spacing: -0.07em;
-    }
-    .section-note {
-      max-width: 330px;
-      color: var(--muted);
-      font-size: 0.9rem;
-    }
-    /* SKILLS */
+    /* KOMPETENSI */
     .skills-grid {
       display: grid;
       grid-template-columns: repeat(2, 1fr);
       gap: 16px;
     }
     .skill-card {
+      min-height: 230px;
       padding: 28px;
-      min-height: 220px;
       transition: 0.2s ease;
     }
     .skill-card:hover {
@@ -389,7 +375,7 @@
       font-size: 0.72rem;
       font-weight: 700;
     }
-    /* PROJECT */
+    /* PROYEK */
     .project-feature {
       display: grid;
       grid-template-columns: 0.85fr 1.15fr;
@@ -412,6 +398,7 @@
       letter-spacing: -0.09em;
     }
     .project-label p {
+      margin: 0;
       color: var(--muted);
       font-size: 0.92rem;
     }
@@ -425,6 +412,7 @@
       letter-spacing: -0.05em;
     }
     .project-content > p {
+      margin: 0;
       color: var(--muted);
     }
     .project-points {
@@ -465,11 +453,11 @@
       border-color: var(--teal);
     }
     .button-primary {
-      color: var(--navy);
       border-color: var(--teal);
+      color: var(--navy);
       background: var(--teal);
     }
-    /* EXPERIENCE */
+    /* PENGALAMAN */
     .timeline {
       display: grid;
       gap: 16px;
@@ -479,6 +467,11 @@
       grid-template-columns: 190px 1fr;
       gap: 28px;
       padding: 28px;
+      transition: 0.2s ease;
+    }
+    .experience-card:hover {
+      border-color: rgba(46, 228, 210, 0.45);
+      background: #102f48;
     }
     .experience-date {
       color: var(--gold);
@@ -505,7 +498,7 @@
       color: var(--muted);
       font-size: 0.9rem;
     }
-    /* EDUCATION */
+    /* PENDIDIKAN */
     .education-grid {
       display: grid;
       grid-template-columns: 1fr 1fr;
@@ -513,6 +506,11 @@
     }
     .education-card {
       padding: 28px;
+      transition: 0.2s ease;
+    }
+    .education-card:hover {
+      transform: translateY(-4px);
+      border-color: rgba(240, 196, 111, 0.5);
     }
     .education-card h3 {
       margin: 13px 0 8px;
@@ -534,16 +532,16 @@
       padding: 13px;
       border: 1px solid var(--line);
       border-radius: 10px;
-      background: rgba(255, 255, 255, 0.03);
       color: var(--muted);
+      background: rgba(255, 255, 255, 0.03);
       font-size: 0.85rem;
     }
     .certificate strong {
       display: block;
-      color: var(--ink);
       margin-bottom: 3px;
+      color: var(--ink);
     }
-    /* CONTACT */
+    /* KONTAK */
     .contact-card {
       padding: clamp(30px, 6vw, 70px);
       border: 1px solid var(--line);
@@ -583,8 +581,8 @@
       transition: 0.2s ease;
     }
     .contact-item:hover {
-      border-color: var(--teal);
       transform: translateY(-3px);
+      border-color: var(--teal);
     }
     .contact-item span {
       color: var(--gold);
@@ -594,8 +592,8 @@
     }
     .contact-item strong {
       color: var(--ink);
-      font-size: 0.84rem;
       overflow-wrap: anywhere;
+      font-size: 0.84rem;
     }
     .footer {
       padding: 24px 0 40px;
@@ -604,6 +602,7 @@
       font-family: "DM Mono", monospace;
       font-size: 0.7rem;
     }
+    /* RESPONSIVE */
     @media (max-width: 900px) {
       .navigation-inner {
         flex-wrap: wrap;
@@ -624,7 +623,7 @@
         border-bottom: 1px solid var(--line);
       }
       .contact-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
       }
     }
     @media (max-width: 680px) {
@@ -632,10 +631,13 @@
         width: min(100% - 28px, 1160px);
       }
       main {
-        padding-top: 20px;
+        padding-top: 0;
+      }
+      .page {
+        padding: 62px 0;
       }
       .hero-card {
-        min-height: 600px;
+        min-height: 590px;
         padding: 32px 25px;
       }
       .section-heading {
@@ -645,73 +647,19 @@
         margin-top: 15px;
       }
       .skills-grid,
-      .education-grid {
+      .education-grid,
+      .contact-grid {
         grid-template-columns: 1fr;
       }
       .experience-card {
         grid-template-columns: 1fr;
         gap: 12px;
       }
+      .portrait-card {
+        min-height: 430px;
+      }
       .mini-stats {
         grid-template-columns: repeat(3, 1fr);
-      }
-      .print-button {
-        width: 100%;
-      }
-    }
-    /* PDF / PRINT */
-    @page {
-      size: A4;
-      margin: 12mm;
-    }
-    @media print {
-      :root {
-        --navy: #071525;
-      }
-      body {
-        background: var(--navy);
-        -webkit-print-color-adjust: exact;
-        print-color-adjust: exact;
-      }
-      .navigation,
-      .footer {
-        display: none !important;
-      }
-      main {
-        padding: 0;
-      }
-      .page {
-        display: block !important;
-        min-height: auto;
-        page-break-after: always;
-        break-after: page;
-      }
-      .page:last-child {
-        page-break-after: auto;
-        break-after: auto;
-      }
-      .profile-grid,
-      .project-feature,
-      .skills-grid,
-      .education-grid {
-        gap: 12px;
-      }
-      .hero-card {
-        min-height: 245mm;
-      }
-      .skill-card,
-      .experience-card,
-      .education-card,
-      .project-feature,
-      .contact-card {
-        break-inside: avoid;
-        page-break-inside: avoid;
-      }
-      .page:not(.print-selected) {
-        display: none !important;
-      }
-      body.print-all .page {
-        display: block !important;
       }
     }
   </style>
@@ -719,36 +667,37 @@
 <body>
   <nav class="navigation">
     <div class="container navigation-inner">
-      <a class="brand" href="#profile" onclick="showPage('profile')">
+      <a class="brand" href="#profile">
         <span class="brand-mark">SH</span>
         <span>Siti Holilah</span>
       </a>
       <div class="tabs" aria-label="Navigasi portfolio">
-        <button class="tab active" data-page="profile">Profil</button>
-        <button class="tab" data-page="skills">Kompetensi</button>
-        <button class="tab" data-page="project">SIADA</button>
-        <button class="tab" data-page="experience">Pengalaman</button>
-        <button class="tab" data-page="education">Pendidikan</button>
-        <button class="tab" data-page="contact">Kontak</button>
+        <a class="tab active" href="#profile">Profil</a>
+        <a class="tab" href="#skills">Kompetensi</a>
+        <a class="tab" href="#project">SIADA</a>
+        <a class="tab" href="#experience">Pengalaman</a>
+        <a class="tab" href="#education">Pendidikan</a>
+        <a class="tab" href="#contact">Kontak</a>
       </div>
-      <button class="print-button" onclick="printAllPages()">Export PDF / Cetak</button>
     </div>
   </nav>
   <main class="container">
-    <!-- HALAMAN 1 -->
-    <section class="page active" id="profile">
+    <section class="page" id="profile">
       <div class="profile-grid">
         <article class="hero-card">
           <div>
             <div class="eyebrow">Portfolio Profesional — 2026</div>
-            <h1>SITI<br /><span>HOLILAH</span></h1>
+            <h1>
+              SITI<br />
+              <span>HOLILAH</span>
+            </h1>
             <div class="role">
               Electrical Technician · Web Developer · Data Administrator
             </div>
             <p class="summary">
-              Fresh graduate D-III Teknik Elektronika yang memadukan ketelitian teknis,
-              pemeliharaan kelistrikan dan mekanik, pengelolaan data operasional,
-              serta pengembangan sistem web yang aman dan terstruktur.
+              Fresh graduate D-III Teknik Elektronika yang memadukan ketelitian
+              teknis, pemeliharaan kelistrikan dan mekanik, pengelolaan data
+              operasional, serta pengembangan sistem web yang aman dan terstruktur.
             </p>
           </div>
           <div class="hero-footer">
@@ -765,10 +714,22 @@
             <div class="eyebrow">Informasi Singkat</div>
             <h3>Profil Kandidat</h3>
             <ul class="info-list">
-              <li><span>Pendidikan</span><span>D-III Teknik Elektronika</span></li>
-              <li><span>Fokus Utama</span><span>Electrical · Web · Data</span></li>
-              <li><span>Status</span><span>Fresh Graduate</span></li>
-              <li><span>Kesiapan</span><span>Sistem kerja shift</span></li>
+              <li>
+                <span>Pendidikan</span>
+                <span>D-III Teknik Elektronika</span>
+              </li>
+              <li>
+                <span>Fokus Utama</span>
+                <span>Electrical · Web · Data</span>
+              </li>
+              <li>
+                <span>Status</span>
+                <span>Fresh Graduate</span>
+              </li>
+              <li>
+                <span>Kesiapan</span>
+                <span>Sistem kerja shift</span>
+              </li>
             </ul>
             <div class="mini-stats">
               <div class="mini-stat">
@@ -788,7 +749,6 @@
         </aside>
       </div>
     </section>
-    <!-- HALAMAN 2 -->
     <section class="page" id="skills">
       <div class="section-heading">
         <div>
@@ -796,8 +756,8 @@
           <h2>Keahlian yang menghubungkan lapangan dan layar.</h2>
         </div>
         <p class="section-note">
-          Memiliki fondasi teknis lintas bidang untuk mendukung kebutuhan operasional,
-          pengelolaan data, dan pengembangan solusi digital.
+          Memiliki fondasi teknis lintas bidang untuk mendukung kebutuhan
+          operasional, pengelolaan data, dan pengembangan solusi digital.
         </p>
       </div>
       <div class="skills-grid">
@@ -805,8 +765,8 @@
           <div class="skill-number">01 / DIGITAL SYSTEMS</div>
           <h3>Pengembangan Web</h3>
           <p>
-            Membangun sistem administrasi dan aplikasi web dengan fokus pada struktur,
-            responsivitas, pengelolaan basis data, dan keamanan aplikasi.
+            Membangun sistem administrasi dan aplikasi web dengan fokus pada
+            struktur, responsivitas, pengelolaan basis data, dan keamanan aplikasi.
           </p>
           <div class="tag-list">
             <span class="tag">HTML5</span>
@@ -821,8 +781,8 @@
           <div class="skill-number">02 / TECHNICAL FIELD</div>
           <h3>Kelistrikan & Mekanik</h3>
           <p>
-            Terbiasa dengan pemeliharaan preventif, inspeksi teknis, perawatan peralatan,
-            serta penerapan standar keselamatan dan prosedur kerja.
+            Terbiasa dengan pemeliharaan preventif, inspeksi teknis, perawatan
+            peralatan, serta penerapan standar keselamatan dan prosedur kerja.
           </p>
           <div class="tag-list">
             <span class="tag">Teknik Listrik</span>
@@ -836,8 +796,8 @@
           <div class="skill-number">03 / OPERATIONAL DATA</div>
           <h3>Administrasi & Data</h3>
           <p>
-            Mengelola input data operasional, pengarsipan, pelaporan, dan dokumentasi
-            teknis secara rapi untuk mendukung kebutuhan tim.
+            Mengelola input data operasional, pengarsipan, pelaporan, dan
+            dokumentasi teknis secara rapi untuk mendukung kebutuhan tim.
           </p>
           <div class="tag-list">
             <span class="tag">Microsoft Excel</span>
@@ -851,8 +811,8 @@
           <div class="skill-number">04 / NETWORK BASICS</div>
           <h3>Jaringan Komputer</h3>
           <p>
-            Memahami instalasi jaringan nirkabel, konfigurasi dasar perangkat jaringan,
-            pengamatan jaringan, serta proses troubleshooting awal.
+            Memahami instalasi jaringan nirkabel, konfigurasi dasar perangkat
+            jaringan, pengamatan jaringan, serta proses troubleshooting awal.
           </p>
           <div class="tag-list">
             <span class="tag">Wireless Network</span>
@@ -864,7 +824,6 @@
         </article>
       </div>
     </section>
-    <!-- HALAMAN 3 -->
     <section class="page" id="project">
       <div class="section-heading">
         <div>
@@ -888,14 +847,15 @@
         <div class="project-content">
           <h3>Sistem Informasi Otomatisasi Analisa Data Gangguan</h3>
           <p>
-            Dikembangkan sebagai solusi digital untuk membantu proses analisis data
-            gangguan jaringan distribusi listrik menjadi lebih terstruktur, aman,
-            mudah ditelusuri, dan siap digunakan untuk kebutuhan pelaporan.
+            Dikembangkan sebagai solusi digital untuk membantu proses analisis
+            data gangguan jaringan distribusi listrik menjadi lebih terstruktur,
+            aman, mudah ditelusuri, dan siap digunakan untuk kebutuhan pelaporan.
           </p>
           <div class="project-points">
             <div class="project-point">
               <strong>Otomatisasi Data:</strong> Mendukung import data Excel,
-              dashboard analitik interaktif, serta pelaporan otomatis dalam format Excel dan PDF.
+              dashboard analitik interaktif, serta pelaporan otomatis dalam format
+              Excel dan PDF.
             </div>
             <div class="project-point">
               <strong>Keamanan Aplikasi:</strong> Menerapkan prepared statement
@@ -904,22 +864,31 @@
             </div>
             <div class="project-point">
               <strong>Relevansi Industri:</strong> Mengintegrasikan pemahaman
-              kelistrikan dengan pengembangan perangkat lunak untuk kebutuhan administrasi
-              dan analisis data pada lingkungan industri kelistrikan.
+              kelistrikan dengan pengembangan perangkat lunak untuk kebutuhan
+              administrasi dan analisis data pada lingkungan industri kelistrikan.
             </div>
           </div>
           <div class="project-actions">
-            <a class="button button-primary" href="https://siada-pln.com" target="_blank" rel="noreferrer">
+            <a
+              class="button button-primary"
+              href="https://siada-pln.com"
+              target="_blank"
+              rel="noreferrer"
+            >
               Kunjungi SIADA-PLN.COM ↗
             </a>
-            <a class="button" href="https://holilah182-sudo.github.io/" target="_blank" rel="noreferrer">
+            <a
+              class="button"
+              href="https://holilah182-sudo.github.io/"
+              target="_blank"
+              rel="noreferrer"
+            >
               Lihat GitHub Portfolio ↗
             </a>
           </div>
         </div>
       </article>
     </section>
-    <!-- HALAMAN 4 -->
     <section class="page" id="experience">
       <div class="section-heading">
         <div>
@@ -927,52 +896,91 @@
           <h2>Belajar melalui standar kerja yang nyata.</h2>
         </div>
         <p class="section-note">
-          Pengalaman di lingkungan teknis, administrasi, dan layanan untuk membangun
-          ketelitian, disiplin SOP, serta kemampuan kolaborasi.
+          Pengalaman di lingkungan teknis, administrasi, dan layanan untuk
+          membangun ketelitian, disiplin SOP, serta kemampuan kolaborasi.
         </p>
       </div>
       <div class="timeline">
         <article class="experience-card">
-          <div class="experience-date">AGU 2025<br />— DES 2025</div>
+          <div class="experience-date">
+            AGU 2025<br />
+            — DES 2025
+          </div>
           <div class="experience-content">
             <h3>PT PLN (Persero)</h3>
             <div class="experience-role">Program Magang Multidisiplin</div>
             <ul>
-              <li>Melaksanakan pemeliharaan preventif terhadap peralatan kelistrikan untuk menjaga keandalan sistem distribusi.</li>
-              <li>Menerapkan teknik pemeliharaan mekanik dan listrik sesuai standar operasional perusahaan.</li>
-              <li>Berkolaborasi dalam inspeksi dan perawatan rutin peralatan distribusi.</li>
-              <li>Menginput serta mengelola data operasional pemeliharaan menggunakan Microsoft Office dan Google Sheets.</li>
-              <li>Merapikan dokumen administratif agar data mudah ditelusuri untuk kebutuhan pelaporan teknis.</li>
+              <li>
+                Melaksanakan pemeliharaan preventif terhadap peralatan kelistrikan
+                untuk menjaga keandalan sistem distribusi.
+              </li>
+              <li>
+                Menerapkan teknik pemeliharaan mekanik dan listrik sesuai standar
+                operasional perusahaan.
+              </li>
+              <li>
+                Berkolaborasi dalam inspeksi dan perawatan rutin peralatan distribusi.
+              </li>
+              <li>
+                Menginput serta mengelola data operasional pemeliharaan menggunakan
+                Microsoft Office dan Google Sheets.
+              </li>
+              <li>
+                Merapikan dokumen administratif agar data mudah ditelusuri untuk
+                kebutuhan pelaporan teknis.
+              </li>
             </ul>
           </div>
         </article>
         <article class="experience-card">
-          <div class="experience-date">SEP 2021<br />— OKT 2022</div>
+          <div class="experience-date">
+            SEP 2021<br />
+            — OKT 2022
+          </div>
           <div class="experience-content">
             <h3>Ayam Geprek Hokky Chicken</h3>
             <div class="experience-role">Kasir</div>
             <ul>
               <li>Melayani transaksi pelanggan secara efisien dan responsif.</li>
-              <li>Mengelola kas harian serta melakukan rekonsiliasi transaksi pada akhir shift.</li>
-              <li>Mengembangkan ketelitian, koordinasi, tanggung jawab, dan orientasi layanan pelanggan.</li>
+              <li>
+                Mengelola kas harian serta melakukan rekonsiliasi transaksi pada
+                akhir shift.
+              </li>
+              <li>
+                Mengembangkan ketelitian, koordinasi, tanggung jawab, dan orientasi
+                layanan pelanggan.
+              </li>
             </ul>
           </div>
         </article>
         <article class="experience-card">
-          <div class="experience-date">JAN 2020<br />— MAR 2020</div>
+          <div class="experience-date">
+            JAN 2020<br />
+            — MAR 2020
+          </div>
           <div class="experience-content">
             <h3>PT Honda Tunas Jaya</h3>
-            <div class="experience-role">Program Magang — Teknisi Maintenance & Admin Data Entry</div>
+            <div class="experience-role">
+              Program Magang — Teknisi Maintenance & Admin Data Entry
+            </div>
             <ul>
-              <li>Melaksanakan preventive maintenance pada komponen mekanik dan kelistrikan kendaraan.</li>
-              <li>Mendukung perbaikan serta pemeliharaan peralatan bengkel sesuai prosedur kerja.</li>
-              <li>Menginput data pelanggan dan membantu dokumentasi administratif operasional bengkel.</li>
+              <li>
+                Melaksanakan preventive maintenance pada komponen mekanik dan
+                kelistrikan kendaraan.
+              </li>
+              <li>
+                Mendukung perbaikan serta pemeliharaan peralatan bengkel sesuai
+                prosedur kerja.
+              </li>
+              <li>
+                Menginput data pelanggan dan membantu dokumentasi administratif
+                operasional bengkel.
+              </li>
             </ul>
           </div>
         </article>
       </div>
     </section>
-    <!-- HALAMAN 5 -->
     <section class="page" id="education">
       <div class="section-heading">
         <div>
@@ -984,9 +992,7 @@
         <article class="education-card">
           <div class="eyebrow">2023 — 2026</div>
           <h3>Politeknik Negeri Balikpapan</h3>
-          <p>
-            D-III Rekayasa Elektro — Program Studi Teknik Elektronika.
-          </p>
+          <p>D-III Rekayasa Elektro — Program Studi Teknik Elektronika.</p>
           <div class="certificate-list">
             <div class="certificate">
               <strong>Fokus Studi</strong>
@@ -998,14 +1004,12 @@
         <article class="education-card">
           <div class="eyebrow">2019 — 2021</div>
           <h3>SMK Negeri 6 Balikpapan</h3>
-          <p>
-            Teknik dan Bisnis Sepeda Motor.
-          </p>
+          <p>Teknik dan Bisnis Sepeda Motor.</p>
           <div class="certificate-list">
             <div class="certificate">
               <strong>Penguatan Dasar Teknik</strong>
-              Pemahaman dasar mekanik, kelistrikan kendaraan, perawatan,
-              serta disiplin prosedur kerja.
+              Pemahaman dasar mekanik, kelistrikan kendaraan, perawatan, serta
+              disiplin prosedur kerja.
             </div>
           </div>
         </article>
@@ -1033,14 +1037,13 @@
             </div>
             <div class="certificate">
               <strong>Proyek Lain</strong>
-              Desain UI/UX aplikasi mobile pembelian: wireframe, mockup,
-              dan penyusunan alur antarmuka yang mudah digunakan.
+              Desain UI/UX aplikasi mobile pembelian: wireframe, mockup, dan
+              penyusunan alur antarmuka yang mudah digunakan.
             </div>
           </div>
         </article>
       </div>
     </section>
-    <!-- HALAMAN 6 -->
     <section class="page" id="contact">
       <article class="contact-card">
         <div class="eyebrow">05 — Mari Berkolaborasi</div>
@@ -1059,11 +1062,21 @@
             <span>Email</span>
             <strong>holilah182@gmail.com</strong>
           </a>
-          <a class="contact-item" href="https://holilah182-sudo.github.io/" target="_blank" rel="noreferrer">
+          <a
+            class="contact-item"
+            href="https://holilah182-sudo.github.io/"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span>Website Portfolio</span>
             <strong>holilah182-sudo.github.io</strong>
           </a>
-          <a class="contact-item" href="https://www.linkedin.com/in/siti-holilah-5913b63a8" target="_blank" rel="noreferrer">
+          <a
+            class="contact-item"
+            href="https://www.linkedin.com/in/siti-holilah-5913b63a8"
+            target="_blank"
+            rel="noreferrer"
+          >
             <span>LinkedIn</span>
             <strong>Siti Holilah</strong>
           </a>
@@ -1084,26 +1097,23 @@
   </footer>
   <script>
     const tabs = document.querySelectorAll(".tab");
-    const pages = document.querySelectorAll(".page");
-    function showPage(pageId) {
-      pages.forEach((page) => {
-        page.classList.toggle("active", page.id === pageId);
-      });
-      tabs.forEach((tab) => {
-        tab.classList.toggle("active", tab.dataset.page === pageId);
-      });
-      window.scrollTo({ top: 0, behavior: "smooth" });
-    }
-    tabs.forEach((tab) => {
-      tab.addEventListener("click", () => showPage(tab.dataset.page));
-    });
-    function printAllPages() {
-      document.body.classList.add("print-all");
-      window.print();
-      setTimeout(() => {
-        document.body.classList.remove("print-all");
-      }, 1000);
-    }
+    const sections = document.querySelectorAll(".page");
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (!entry.isIntersecting) return;
+          tabs.forEach((tab) => {
+            const targetId = tab.getAttribute("href").replace("#", "");
+            tab.classList.toggle("active", targetId === entry.target.id);
+          });
+        });
+      },
+      {
+        rootMargin: "-30% 0px -55% 0px",
+        threshold: 0
+      }
+    );
+    sections.forEach((section) => observer.observe(section));
   </script>
 </body>
 </html>
