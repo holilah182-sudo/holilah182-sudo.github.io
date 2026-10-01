@@ -8,11 +8,15 @@
 <meta property="og:title" content="Siti Holilah | Portfolio">
 <meta property="og:description" content="Web developer, teknisi kelistrikan dan mekanik, administrasi data. Pembuat SIADA untuk PLN UP2D KALTIMRA.">
 <meta property="og:type" content="website">
+<meta property="og:url" content="https://holilah182-sudo.github.io/">
+<meta property="og:image" content="https://holilah182-sudo.github.io/preview.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232ee4d2'/%3E%3Ctext x='32' y='42' font-family='Arial' font-weight='800' font-size='28' text-anchor='middle' fill='%23071525'%3ESH%3C/text%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-:root{--navy:#071525;--card:rgba(16,43,67,.69);--ink:#eef7f7;--muted:#aac0c8;--teal:#2ee4d2;--gold:#f0c46f;--line:rgba(238,247,247,.14)}
+:root{--navy:#071525;--card:rgba(16,43,67,.68);--ink:#eef7f7;--muted:#aac0c8;--teal:#2ee4d2;--gold:#f0c46f;--line:rgba(238,247,247,.14)}
 *{box-sizing:border-box}
 html{scroll-behavior:smooth}
 body{margin:0;color:var(--ink);background:radial-gradient(circle at 85% 0,#123f55 0,transparent 30%),var(--navy);font-family:"Plus Jakarta Sans",sans-serif;line-height:1.65}
@@ -100,6 +104,11 @@ a.citem:hover{border-color:var(--teal);transform:translateY(-3px)}
 .citem span{color:var(--gold);font-size:.78rem;font-weight:700}
 .citem strong{overflow-wrap:anywhere;font-size:.86rem}
 .citem.in{border-color:#0a66c2;background:rgba(10,102,194,.22)}
+.shots{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:16px}
+.shots:empty{display:none}
+.shots figure{margin:0;overflow:hidden;border:1px solid var(--line);border-radius:16px;background:var(--card)}
+.shots img{display:block;width:100%;height:auto}
+.shots figcaption{padding:10px 14px;color:var(--muted);font-size:.78rem;font-weight:600}
 footer{padding:24px 0 40px;color:var(--muted);text-align:center;font-size:.8rem}
 footer a{color:var(--teal);font-weight:700}
 .js .rv{opacity:0;transform:translateY(18px);transition:opacity .6s,transform .6s}
@@ -109,13 +118,13 @@ footer a{color:var(--teal);font-weight:700}
 .tabs{order:3;width:100%}
 .hero,.feature{grid-template-columns:1fr}
 .f-left{border-right:0;border-bottom:1px solid var(--line)}
-.grid3,.cgrid{grid-template-columns:1fr 1fr}
+.grid3,.cgrid,.shots{grid-template-columns:1fr 1fr}
 }
 @media(max-width:680px){
 .container{width:calc(100% - 28px)}
 .page{padding:58px 0}
 .hero-card{min-height:0}
-.grid2,.grid3,.cgrid{grid-template-columns:1fr}
+.grid2,.grid3,.cgrid,.shots{grid-template-columns:1fr}
 .job{grid-template-columns:1fr;gap:10px}
 .f-left,.f-right{padding:28px 22px}
 }
@@ -151,7 +160,8 @@ footer a{color:var(--teal);font-weight:700}
 <p class="sum">Fresh graduate D-III Teknik Elektronika (IPK 3,65) yang memadukan ketelitian teknis, pemeliharaan kelistrikan dan mekanik, pengelolaan data operasional, serta pengembangan sistem web yang aman dan terstruktur.</p>
 <div class="actions">
 <a class="btn btn-in" href="https://www.linkedin.com/in/sitiholilah-" target="_blank" rel="noopener noreferrer">Lihat LinkedIn</a>
-<a class="btn btn-main" href="mailto:holilah182@gmail.com">Kirim email</a>
+<a class="btn btn-main" href="https://drive.google.com/uc?export=download&amp;id=1Hw5t7l3QwtK26zkqzoyhSXZix0EHpFad" target="_blank" rel="noopener noreferrer">Download CV</a>
+<a class="btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=holilah182@gmail.com&amp;su=Peluang%20Kerja%20-%20Portfolio%20Siti%20Holilah" target="_blank" rel="noopener noreferrer">Kirim email</a>
 <a class="btn" href="https://wa.me/6282171288504" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a>
 </div>
 </div>
@@ -217,6 +227,11 @@ footer a{color:var(--teal);font-weight:700}
 </div>
 </div>
 </article>
+<div class="shots">
+<figure><img src="siada-1.jpg" alt="Dashboard SIADA" loading="lazy" onerror="this.parentElement.remove()"><figcaption>Dashboard analitik</figcaption></figure>
+<figure><img src="siada-2.jpg" alt="Import data Excel di SIADA" loading="lazy" onerror="this.parentElement.remove()"><figcaption>Import data Excel</figcaption></figure>
+<figure><img src="siada-3.jpg" alt="Laporan otomatis SIADA" loading="lazy" onerror="this.parentElement.remove()"><figcaption>Laporan otomatis</figcaption></figure>
+</div>
 </section>
 
 <section class="page rv" id="kompetisi">
@@ -260,7 +275,7 @@ footer a{color:var(--teal);font-weight:700}
 </ul></div>
 </article>
 <article class="job">
-<div class="meta">Januari 2020<br>sampai Maret 2020</div>
+<div class="meta">Jan 2020<br>sampai Mar 2020</div>
 <div><h3>PT Honda Tunas Jaya</h3><div class="r">Magang, Teknisi Maintenance dan Admin Data Entry</div>
 <ul>
 <li>Melaksanakan preventive maintenance pada komponen mekanik dan kelistrikan kendaraan.</li>
@@ -291,10 +306,11 @@ footer a{color:var(--teal);font-weight:700}
 <p>Terbuka untuk peran di bidang teknik kelistrikan dan mekanik, administrasi data, pengembangan web, dan IT support.</p>
 <div class="cgrid">
 <a class="citem in" href="https://www.linkedin.com/in/sitiholilah-" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><strong>Hubungi saya di LinkedIn</strong></a>
-<a class="citem" href="mailto:holilah182@gmail.com"><span>Email</span><strong>holilah182@gmail.com</strong></a>
+<a class="citem" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=holilah182@gmail.com&amp;su=Peluang%20Kerja%20-%20Portfolio%20Siti%20Holilah" target="_blank" rel="noopener noreferrer"><span>Email</span><strong>holilah182@gmail.com</strong></a>
 <a class="citem" href="https://wa.me/6282171288504" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>+62 821-7128-8504</strong></a>
 <a class="citem" href="https://holilah182-sudo.github.io/" target="_blank" rel="noopener noreferrer"><span>Portfolio</span><strong>holilah182-sudo.github.io</strong></a>
 <a class="citem" href="https://siada-pln.com" target="_blank" rel="noopener noreferrer"><span>Proyek SIADA</span><strong>siada-pln.com</strong></a>
+<a class="citem" href="https://drive.google.com/uc?export=download&amp;id=1Hw5t7l3QwtK26zkqzoyhSXZix0EHpFad" target="_blank" rel="noopener noreferrer"><span>Curriculum Vitae</span><strong>Download CV (PDF)</strong></a>
 <div class="citem"><span>Domisili</span><strong>Balikpapan, Kalimantan Timur</strong></div>
 </div>
 </article>
