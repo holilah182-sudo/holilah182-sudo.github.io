@@ -40,6 +40,8 @@ nav{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);backgro
 .btn-main{background:var(--teal);border-color:var(--teal);color:var(--navy)}
 .btn-in{background:#0a66c2;border-color:#0a66c2;color:#fff}
 .btn-in:hover{border-color:#fff}
+.btn-yt{background:#e62117;border-color:#e62117;color:#fff}
+.btn-yt:hover{border-color:#fff}
 .page{padding:84px 0;scroll-margin-top:90px}
 .page+.page{border-top:1px solid var(--line)}
 .page:first-child{padding-top:30px}
@@ -95,6 +97,24 @@ nav{position:sticky;top:0;z-index:20;border-bottom:1px solid var(--line);backgro
 .job ul{display:grid;gap:8px;margin:0;padding-left:20px;color:var(--muted);font-size:.9rem}
 .cert{margin-top:16px;padding:13px;border:1px solid var(--line);border-radius:10px;background:rgba(255,255,255,.03);color:var(--muted);font-size:.85rem}
 .cert strong{display:block;margin-bottom:3px;color:var(--ink)}
+
+/* Video */
+.vgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.vcard{display:flex;flex-direction:column;overflow:hidden;border:1px solid var(--line);border-radius:20px;background:var(--card);transition:.2s}
+.vcard:hover{border-color:rgba(46,228,210,.5);transform:translateY(-3px)}
+.thumb{position:relative;display:block;aspect-ratio:16/9;background:#0b2941 center/cover no-repeat}
+.thumb::after{content:"";position:absolute;inset:0;background:linear-gradient(0deg,rgba(7,21,37,.6),transparent 60%)}
+.play{position:absolute;z-index:1;left:50%;top:50%;transform:translate(-50%,-50%);width:58px;height:58px;display:grid;place-items:center;padding-left:4px;border-radius:50%;background:var(--teal);color:var(--navy);font-size:1.3rem;transition:.2s}
+.vcard:hover .play{transform:translate(-50%,-50%) scale(1.1)}
+.vbody{display:flex;flex-direction:column;gap:10px;flex:1;padding:20px}
+.vbody h3{margin:0;font-size:1.02rem;line-height:1.4;letter-spacing:-.02em}
+.vbody .btn{margin-top:auto;align-self:flex-start}
+
+/* Laporan */
+.docs{display:grid;grid-template-columns:1fr auto;gap:28px;align-items:center;padding:clamp(24px,4vw,40px);border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 12% 20%,rgba(46,228,210,.14),transparent 30%),linear-gradient(135deg,#0b2941,#071525)}
+.docs h3{margin:8px 0 10px;font-size:clamp(1.4rem,3vw,2rem);line-height:1.15;letter-spacing:-.04em}
+.docs p{margin:0;color:var(--muted);font-size:.92rem;max-width:620px}
+
 .contact{padding:clamp(28px,6vw,64px);border:1px solid var(--line);border-radius:24px;background:radial-gradient(circle at 85% 15%,rgba(240,196,111,.18),transparent 22%),radial-gradient(circle at 15% 95%,rgba(46,228,210,.16),transparent 24%),linear-gradient(135deg,#102f48,#071525 70%);text-align:center}
 .contact h2{max-width:800px;margin:10px auto 16px;font-size:clamp(2.3rem,6vw,4.6rem);line-height:.92;letter-spacing:-.07em}
 .contact>p{max-width:600px;margin:auto;color:var(--muted)}
@@ -116,15 +136,15 @@ footer a{color:var(--teal);font-weight:700}
 @media(max-width:900px){
 .nav-in{flex-wrap:wrap;justify-content:center;padding:12px 0}
 .tabs{order:3;width:100%}
-.hero,.feature{grid-template-columns:1fr}
+.hero,.feature,.docs{grid-template-columns:1fr}
 .f-left{border-right:0;border-bottom:1px solid var(--line)}
-.grid3,.cgrid,.shots{grid-template-columns:1fr 1fr}
+.grid3,.cgrid,.shots,.vgrid{grid-template-columns:1fr 1fr}
 }
 @media(max-width:680px){
 .container{width:calc(100% - 28px)}
 .page{padding:58px 0}
 .hero-card{min-height:0}
-.grid2,.grid3,.cgrid,.shots{grid-template-columns:1fr}
+.grid2,.grid3,.cgrid,.shots,.vgrid{grid-template-columns:1fr}
 .job{grid-template-columns:1fr;gap:10px}
 .f-left,.f-right{padding:28px 22px}
 }
@@ -140,6 +160,8 @@ footer a{color:var(--teal);font-weight:700}
 <a class="tab active" href="#profile">Profil</a>
 <a class="tab" href="#skills">Kompetensi</a>
 <a class="tab" href="#project">SIADA</a>
+<a class="tab" href="#video">Video</a>
+<a class="tab" href="#laporan">Laporan</a>
 <a class="tab" href="#kompetisi">Kompetisi</a>
 <a class="tab" href="#experience">Pengalaman</a>
 <a class="tab" href="#education">Pendidikan</a>
@@ -161,6 +183,8 @@ footer a{color:var(--teal);font-weight:700}
 <div class="actions">
 <a class="btn btn-in" href="https://www.linkedin.com/in/sitiholilah-" target="_blank" rel="noopener noreferrer">Lihat LinkedIn</a>
 <a class="btn btn-main" href="https://drive.google.com/uc?export=download&amp;id=1Hw5t7l3QwtK26zkqzoyhSXZix0EHpFad" target="_blank" rel="noopener noreferrer">Download CV</a>
+<a class="btn" href="#video">Lihat video proyek</a>
+<a class="btn" href="#laporan">Lihat laporan</a>
 <a class="btn" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=holilah182@gmail.com&amp;su=Peluang%20Kerja%20-%20Portfolio%20Siti%20Holilah" target="_blank" rel="noopener noreferrer">Kirim email</a>
 <a class="btn" href="https://wa.me/6282171288504" target="_blank" rel="noopener noreferrer">Chat WhatsApp</a>
 </div>
@@ -223,7 +247,7 @@ footer a{color:var(--teal);font-weight:700}
 </div>
 <div class="actions">
 <a class="btn btn-main" href="https://siada-pln.com" target="_blank" rel="noopener noreferrer">Buka siada-pln.com</a>
-<a class="btn" href="https://holilah182-sudo.github.io/" target="_blank" rel="noopener noreferrer">GitHub portfolio</a>
+<a class="btn" href="https://github.com/holilah182-sudo" target="_blank" rel="noopener noreferrer">GitHub</a>
 </div>
 </div>
 </article>
@@ -232,6 +256,45 @@ footer a{color:var(--teal);font-weight:700}
 <figure><img src="siada-2.jpg" alt="Import data Excel di SIADA" loading="lazy" onerror="this.parentElement.remove()"><figcaption>Import data Excel</figcaption></figure>
 <figure><img src="siada-3.jpg" alt="Laporan otomatis SIADA" loading="lazy" onerror="this.parentElement.remove()"><figcaption>Laporan otomatis</figcaption></figure>
 </div>
+</section>
+
+<section class="page rv" id="video">
+<div class="head">
+<div class="label">Dokumentasi proyek</div>
+<h2>Proyek dalam bentuk video.</h2>
+<p>Tiga video yang menunjukkan proyek yang pernah saya kerjakan. Klik untuk menonton di YouTube.</p>
+</div>
+<div class="vgrid">
+<article class="vcard" data-id="dFYGQM_x-44">
+<a class="thumb" href="https://www.youtube.com/watch?v=dFYGQM_x-44" target="_blank" rel="noopener noreferrer" aria-label="Tonton video proyek 1" style="background-image:url('https://i.ytimg.com/vi/dFYGQM_x-44/hqdefault.jpg')"><span class="play" aria-hidden="true">&#9654;</span></a>
+<div class="vbody"><div class="meta">Video proyek 1</div><h3>Video Proyek 1</h3><a class="btn btn-yt" href="https://www.youtube.com/watch?v=dFYGQM_x-44" target="_blank" rel="noopener noreferrer">Tonton di YouTube</a></div>
+</article>
+<article class="vcard" data-id="uVlhdc8I3IA">
+<a class="thumb" href="https://www.youtube.com/watch?v=uVlhdc8I3IA" target="_blank" rel="noopener noreferrer" aria-label="Tonton video proyek 2" style="background-image:url('https://i.ytimg.com/vi/uVlhdc8I3IA/hqdefault.jpg')"><span class="play" aria-hidden="true">&#9654;</span></a>
+<div class="vbody"><div class="meta">Video proyek 2</div><h3>Video Proyek 2</h3><a class="btn btn-yt" href="https://www.youtube.com/watch?v=uVlhdc8I3IA" target="_blank" rel="noopener noreferrer">Tonton di YouTube</a></div>
+</article>
+<article class="vcard" data-id="WVg5eZ-0DA4">
+<a class="thumb" href="https://www.youtube.com/watch?v=WVg5eZ-0DA4" target="_blank" rel="noopener noreferrer" aria-label="Tonton video proyek 3" style="background-image:url('https://i.ytimg.com/vi/WVg5eZ-0DA4/hqdefault.jpg')"><span class="play" aria-hidden="true">&#9654;</span></a>
+<div class="vbody"><div class="meta">Video proyek 3</div><h3>Video Proyek 3</h3><a class="btn btn-yt" href="https://www.youtube.com/watch?v=WVg5eZ-0DA4" target="_blank" rel="noopener noreferrer">Tonton di YouTube</a></div>
+</article>
+</div>
+</section>
+
+<section class="page rv" id="laporan">
+<div class="head">
+<div class="label">Laporan dan dokumentasi</div>
+<h2>Contoh laporan yang pernah saya kelola.</h2>
+<p>Dokumentasi laporan dari masa magang, disusun dalam Google Sheets.</p>
+</div>
+<article class="docs">
+<div>
+<div class="meta">Google Sheets</div>
+<h3>Report Documentation</h3>
+<p>Kumpulan laporan kerja yang terstruktur: pengelolaan laporan magang, laporan aktivitas pemeliharaan harian, dan rekap bulanan.</p>
+<div class="tags"><span class="tag">Internship Report Management</span><span class="tag">Daily Activity Maintenance Report</span><span class="tag">Monthly Summary</span></div>
+</div>
+<a class="btn btn-main" href="https://docs.google.com/spreadsheets/d/14rFwTvXOMZn-NmEHc40VzisBaGkReq4_vXuWCLBEcyc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Buka laporan</a>
+</article>
 </section>
 
 <section class="page rv" id="kompetisi">
@@ -310,6 +373,8 @@ footer a{color:var(--teal);font-weight:700}
 <a class="citem" href="https://wa.me/6282171288504" target="_blank" rel="noopener noreferrer"><span>WhatsApp</span><strong>+62 821-7128-8504</strong></a>
 <a class="citem" href="https://holilah182-sudo.github.io/" target="_blank" rel="noopener noreferrer"><span>Portfolio</span><strong>holilah182-sudo.github.io</strong></a>
 <a class="citem" href="https://siada-pln.com" target="_blank" rel="noopener noreferrer"><span>Proyek SIADA</span><strong>siada-pln.com</strong></a>
+<a class="citem" href="#laporan"><span>Laporan</span><strong>Report Documentation</strong></a>
+<a class="citem" href="#video"><span>Video proyek</span><strong>Tonton di YouTube</strong></a>
 <a class="citem" href="https://drive.google.com/uc?export=download&amp;id=1Hw5t7l3QwtK26zkqzoyhSXZix0EHpFad" target="_blank" rel="noopener noreferrer"><span>Curriculum Vitae</span><strong>Download CV (PDF)</strong></a>
 <div class="citem"><span>Domisili</span><strong>Balikpapan, Kalimantan Timur</strong></div>
 </div>
@@ -329,6 +394,17 @@ const spy=new IntersectionObserver(es=>{es.forEach(e=>{if(!e.isIntersecting)retu
 secs.forEach(s=>spy.observe(s));
 const rv=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting){e.target.classList.add("in");rv.unobserve(e.target)}})},{threshold:.08});
 document.querySelectorAll(".rv").forEach(el=>rv.observe(el));
+
+/* Ambil judul video otomatis dari YouTube (oEmbed). Kalau gagal, judul bawaan tetap tampil. */
+document.querySelectorAll(".vcard").forEach(card=>{
+  const id=card.dataset.id;
+  const url="https://www.youtube.com/oembed?format=json&url="+encodeURIComponent("https://www.youtube.com/watch?v="+id);
+  fetch(url).then(r=>r.ok?r.json():Promise.reject()).then(d=>{
+    if(!d||!d.title)return;
+    card.querySelector("h3").textContent=d.title;
+    card.querySelector(".thumb").setAttribute("aria-label","Tonton video: "+d.title);
+  }).catch(()=>{});
+});
 </script>
 </body>
 </html>
