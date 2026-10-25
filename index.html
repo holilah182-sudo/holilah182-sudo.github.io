@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Siti Holilah | Web Developer, Teknisi Kelistrikan, Admin Data</title>
-<meta name="description" content="Portfolio Siti Holilah, lulusan D-III Teknik Elektronika di Balikpapan. Web developer (PHP, MySQL), teknisi kelistrikan dan mekanik, administrasi data.">
+<title>Siti Holilah | Web Developer, Teknisi Kelistrikan, dan Admin Data di Balikpapan</title>
+<meta name="description" content="Portofolio Siti Holilah, lulusan D-III Teknik Elektronika di Balikpapan">
 <meta property="og:title" content="Siti Holilah | Portfolio">
 <meta property="og:description" content="Web developer, teknisi kelistrikan dan mekanik, administrasi data. Pembuat SIADA untuk PLN UP2D KALTIMRA.">
 <meta property="og:type" content="website">
@@ -22,16 +22,17 @@ html{scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font-family:"Bellota Text",Georgia,serif;line-height:1.65}
 a{color:inherit;text-decoration:none}
 a:focus-visible{outline:2px solid var(--brown);outline-offset:3px}
-h1,h2,h3{margin:0;font-weight:401}
+h1,h2,h3{margin:0;font-weight:400}
 .skip{position:absolute;left:-999px;top:8px;padding:8px 14px;background:var(--brown);color:#fff;border-radius:8px;z-index:50}
 .skip:focus{left:8px}
 .wrap{width:min(1120px,calc(100% - 40px));margin:auto}
-.bar{position:sticky;top:0;z-index:30;padding:15px 0;background:linear-gradient(var(--bg) 70%,transparent)}
-.pill{display:flex;gap:4px;width:fit-content;max-width:100%;padding:6px;overflow-x:auto;border-radius:999px;background:var(--beige);scrollbar-width:none}
+.bar{position:sticky;top:0;z-index:30;padding:14px 0;background:linear-gradient(var(--bg) 70%,transparent)}
+.bar .wrap{width:100%;margin:0;padding:0 14px}
+.pill{display:flex;justify-content:flex-start;gap:4px;width:fit-content;max-width:100%;margin:0 0 0 auto;padding:6px;overflow-x:auto;border-radius:999px;background:var(--beige);scrollbar-width:none}
 .pill::-webkit-scrollbar{display:none}
 .pill a{padding:7px 18px;border-radius:999px;color:var(--soft);font-size:.82rem;white-space:nowrap}
 .pill a.on{background:var(--brown);color:#fff;font-weight:700}
-.pg{position:relative;overflow:hidden;padding:70px 0;scroll-margin-top:61px}
+.pg{position:relative;overflow:hidden;padding:70px 0;scroll-margin-top:60px}
 .pg>.wrap{position:relative;z-index:1}
 .arc::before{content:"";position:absolute;right:-140px;top:-150px;width:420px;height:420px;border-radius:50%;background:var(--beige)}
 .arc::after{content:"";position:absolute;right:-60px;top:-70px;width:420px;height:420px;border-radius:50%;border:1px solid var(--taupe)}
@@ -42,7 +43,7 @@ h1,h2,h3{margin:0;font-weight:401}
 .big.lg{font-size:clamp(2.8rem,7vw,5rem)}
 .sub{margin-top:6px;color:var(--mid);font-size:1.05rem;font-weight:700}
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:30px;align-items:center;min-height:620px}
-.hero p{max-width:560px;margin:20px 0 0;color:var(--soft);text-align:justify}
+.hero p{max-width:560px;margin:20px 0 0;color:var(--soft);text-align:left}
 .cta{margin-top:34px}
 .cta h3{font-family:"Bebas Neue",sans-serif;font-size:1.7rem;color:var(--brown);letter-spacing:.02em}
 .links{display:flex;flex-wrap:wrap;gap:10px;margin-top:10px}
@@ -50,7 +51,7 @@ h1,h2,h3{margin:0;font-weight:401}
 .lk:hover{background:var(--brown);color:#fff}
 .lk.fill{background:var(--brown);color:#fff}
 .lk.fill:hover{background:var(--mid);border-color:var(--mid)}
-.avail{margin-top:15px;color:var(--mid);font-size:.84rem}
+.avail{margin-top:16px;color:var(--mid);font-size:.84rem}
 .arch{position:relative;justify-self:center;width:min(380px,100%)}
 .arch::before{content:"";position:absolute;inset:30px -26px -26px 30px;border-radius:190px 190px 24px 24px;background:var(--beige)}
 .arch img{position:relative;display:block;width:100%;height:auto;aspect-ratio:3/4;object-fit:cover;object-position:top;border-radius:190px 190px 24px 24px}
@@ -58,7 +59,7 @@ h1,h2,h3{margin:0;font-weight:401}
 .two{display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:start}
 .edu{display:grid;gap:26px;margin-top:30px}
 .yr{display:inline-block;padding:3px 22px;border-radius:999px;background:var(--taupe);color:var(--brown);font-size:.84rem;font-weight:700}
-.edu h3{margin:9px 0 2px;font-size:1.1rem;font-weight:700}
+.edu h3{margin:8px 0 2px;font-size:1.1rem;font-weight:700}
 .edu p{margin:0;color:var(--soft);font-size:.92rem}
 .edu .line{margin-top:10px;height:3px;border-radius:2px;background:var(--mid)}
 .ipk{float:right;color:var(--soft);font-size:.82rem}
@@ -84,7 +85,7 @@ h1,h2,h3{margin:0;font-weight:401}
 .feat .l .big{color:#fff}
 .feat .r{padding:34px}
 .feat h3{font-size:1.2rem;font-weight:700;line-height:1.3}
-.feat p{margin:90px 0 0;color:#d9cbc3;font-size:.9rem}
+.feat p{margin:10px 0 0;color:#d9cbc3;font-size:.9rem}
 .feat ul{margin:14px 0 0;padding-left:18px;font-size:.86rem;color:#d9cbc3}
 .feat .tg span{background:rgba(255,255,255,.14);color:#fff}
 .feat .lk{border-color:#fff;color:#fff}
@@ -132,6 +133,7 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 }
 @media(max-width:600px){
 .wrap{width:calc(100% - 28px)}
+.bar .wrap{width:100%}
 .pg{padding:50px 0}
 .skills,.grid3,.shots{grid-template-columns:1fr}
 .feat .l,.feat .r{padding:24px 20px}
@@ -142,7 +144,7 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 .ph{margin:0 0 12px;break-inside:avoid}
 .ph.wide{column-span:all}
 .ph img{display:block;width:100%;height:auto;border-radius:10px;border:1px solid var(--beige)}
-.ph figcaption{margin:6px 2px 0;color:var(--soft);font-size:.76rem;line-height:1.4}
+.ph figcaption{margin:5px 2px 0;color:var(--soft);font-size:.76rem;line-height:1.4}
 .ph figcaption b{color:var(--mid)}
 @media(max-width:860px){.intern{grid-template-columns:1fr}}
 @media(max-width:480px){.masonry{columns:1}}
@@ -275,8 +277,8 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 <div class="hero">
 <div>
 <h1 class="big xl">HELLO, I'M SITI</h1>
-<div class="sub">Web Developer, Teknisi Kelistrikan, Admin Data</div>
-<p>Fresh graduate D-III Teknik Elektronika (IPK 3,65) yang memadukan ketelitian teknis, pemeliharaan kelistrikan dan mekanik, pengelolaan data operasional, serta pengembangan sistem web yang aman dan terstruktur. Membangun SIADA untuk PLN UP2D KALTIMRA dan terbiasa bekerja dengan SOP serta sistem kerja shift.</p>
+<div class="sub">Electronics Engineering Graduate | Electrical Maintenance | Data Reporting | Web Developer | Network Administrator | Administration</div>
+<p>Saya lulusan D-III Teknik Elektronika Politeknik Negeri Balikpapan dengan kemampuan di bidang kelistrikan, mekanik, administrasi data, jaringan, serta pengembangan web. Selama berkuliah, saya terbiasa dengan praktikum di laboratorium, mengerjakan proyek secara kelompok maupun mandiri, dan aktif mengikuti kegiatan kampus seperti workshop, sharing session, pameran karya, dan kompetisi inovasi. Saat magang multidisiplin di PT PLN (Persero), saya memeriksa dan merawat peralatan distribusi sesuai SOP, sekaligus mengelola data dan laporan pemeliharaan. Dari pengalaman itu saya membangun SIADA, sistem web untuk menganalisis data gangguan jaringan listrik. Saya teliti dalam mengelola data, disiplin pada prosedur, senang bekerja dalam tim, dan siap ditempatkan pada sistem kerja shift. Saya terbuka untuk peran di bidang teknik kelistrikan dan mekanik, administrasi data, maupun pengembangan web di Balikpapan, Kalimantan Timur, dan daerah lain di Indonesia.</p>
 <div class="cta">
 <h3>LET'S CONNECT</h3>
 <div class="links">
@@ -285,7 +287,7 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 <a class="lk" href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=holilah182@gmail.com&amp;su=Peluang%20Kerja%20-%20Portfolio%20Siti%20Holilah" target="_blank" rel="noopener noreferrer">Email</a>
 <a class="lk" href="https://wa.me/6282171288504" target="_blank" rel="noopener noreferrer">WhatsApp</a>
 </div>
-<div class="avail">Terbuka untuk peluang kerja di Balikpapan dan Kalimantan Timur.</div>
+<div class="avail">Terbuka untuk peluang kerja di Balikpapan, Kalimantan Timur, dan daerah lain di Indonesia pada bidang pemeliharaan kelistrikan, administrasi data, dan pengembangan web.</div>
 </div>
 </div>
 <a class="arch zoom" href="#home"><img src="foto/siti-holilah-mengenakan-toga-wisuda.jpg" width="1080" height="1440" alt="Siti Holilah mengenakan toga wisuda D-III Politeknik Negeri Balikpapan"></a>
@@ -293,16 +295,16 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 </div></section>
 
 <section class="pg arc-l arc rv" id="about"><div class="wrap"><div class="slide">
-<div class="s-title"><h2 class="big">PENDIDIKAN</h2><span>- Politeknik</span></div>
+<div class="s-title"><h2 class="big">PENDIDIKAN</h2><span>- Perkuliahan</span></div>
 <div class="s-grid">
 <div class="s-left">
 <div class="ph-row five"><a class="zoom" href="#about" title="Yudisium Jurusan Rekayasa Elektro, Teknik Elektronika D-III"><img src="foto/yudisium-jurusan-rekayasa-elektro-te.jpg" width="1280" height="961" loading="lazy" alt="Yudisium Jurusan Rekayasa Elektro, Teknik Elektronika D-III" style="object-position:50% 70%"></a><a class="zoom" href="#about" title="Hari wisuda bersama teman"><img src="foto/hari-wisuda-bersama-teman.jpg" width="1080" height="608" loading="lazy" alt="Hari wisuda bersama teman" style="object-position:50% 45%"></a><a class="zoom" href="#about" title="Workshop Perencanaan Unit Produksi, Jurusan Rekayasa Elektro"><img src="foto/workshop-perencanaan-unit-produksi-j.jpg" width="1280" height="720" loading="lazy" alt="Workshop Perencanaan Unit Produksi, Jurusan Rekayasa Elektro" style="object-position:50% 55%"></a><a class="zoom" href="#about" title="Pameran proyek unggulan Jurusan Rekayasa Elektro"><img src="foto/pameran-proyek-unggulan-jurusan-reka.jpg" width="1280" height="576" loading="lazy" alt="Pameran proyek unggulan Jurusan Rekayasa Elektro" style="object-position:50% 50%"></a><a class="zoom" href="#about" title="Pameran karya di acara wisuda, 12 Okt 2024"><img src="foto/pameran-karya-di-acara-wisuda-12-okt.jpg" width="720" height="1280" loading="lazy" alt="Pameran karya di acara wisuda, 12 Okt 2024" style="object-position:50% 62%"></a></div>
 <div class="blk"><span class="dot"></span><div><h3>Politeknik Negeri Balikpapan, D-III Teknik Elektronika (Rekayasa Elektro)</h3><div class="d">2023 - 2026 &middot; IPK 3,65</div>
-<ul><li>Fokus studi: Software Development, UI/UX Design, Product Electronics, Telekomunikasi, Otomasi Industri, dan Electrical Engineering.</li><li>Tugas Akhir: SIADA, sistem web analisis data gangguan jaringan distribusi (studi kasus PLN UP2D KALTIMRA).</li><li>Yudisium dan wisuda 2026.</li></ul></div></div>
+<ul><li>Kurikulum lintas bidang: pengembangan perangkat lunak, desain UI/UX, rekayasa produk elektronika, telekomunikasi, otomasi industri, dan teknik elektro.</li><li>Tugas Akhir: SIADA, sistem web full-stack untuk mengotomatisasi analisis data gangguan jaringan distribusi, studi kasus PLN UP2D KALTIMRA, dan sudah berjalan live.</li><li>Menyelesaikan studi dan diwisuda pada 2026.</li></ul></div></div>
 </div>
 <div class="s-right">
 <div class="blk"><span class="dot"></span><div><h3>Kegiatan dan Proyek Kampus</h3><div class="d">Jurusan Rekayasa Elektro</div>
-<ul><li>Pameran proyek unggulan jurusan dan pameran karya di acara wisuda.</li><li>Workshop Perencanaan Unit Produksi.</li><li>Praktik laboratorium dan proyek kelompok: trainer komponen elektronika, robot mobil, dan prototipe.</li><li>Sharing session dan kegiatan lapangan dengan APD.</li></ul></div></div>
+<ul><li>Menampilkan karya pada pameran proyek unggulan Jurusan Rekayasa Elektro dan pameran karya robot mobil di Wisuda Angkatan XX (12 Oktober 2024).</li><li>Mengikuti Workshop Perencanaan Unit Produksi di lingkungan Jurusan Rekayasa Elektro.</li><li>Praktik laboratorium dan proyek kelompok, antara lain penyolderan, trainer komponen elektronika, robot mobil, dan prototipe.</li><li>Mengikuti sharing session dan kegiatan lapangan dengan penggunaan APD.</li></ul></div></div>
 <div class="ph-grid five"><a class="zoom" href="#about" title="Praktik penyolderan di laboratorium"><img src="foto/praktik-penyolderan-di-laboratorium.jpg" width="900" height="1600" loading="lazy" alt="Praktik penyolderan di laboratorium" style="object-position:50% 50%"></a><a class="zoom" href="#about" title="Proyek Trainer Komponen Elektronika"><img src="foto/proyek-trainer-komponen-elektronika.jpg" width="900" height="413" loading="lazy" alt="Proyek Trainer Komponen Elektronika" style="object-position:50% 40%"></a><a class="zoom" href="#about" title="Kerja kelompok bersama teman"><img src="foto/kerja-kelompok-bersama-teman.jpg" width="1280" height="960" loading="lazy" alt="Kerja kelompok bersama teman" style="object-position:50% 55%"></a><a class="zoom" href="#about" title="Sesi diskusi"><img src="foto/sesi-diskusi.jpg" width="1280" height="720" loading="lazy" alt="Sesi diskusi" style="object-position:50% 50%"></a><a class="zoom" href="#about" title="Prototipe proyek kelompok"><img src="foto/prototipe-proyek-kelompok.jpg" width="720" height="1280" loading="lazy" alt="Prototipe proyek kelompok" style="object-position:50% 60%"></a><a class="zoom" href="#about" title="Menunjukkan laporan dan alat proyek"><img src="foto/menunjukkan-laporan-dan-alat-proyek.jpg" width="720" height="1280" loading="lazy" alt="Menunjukkan laporan dan alat proyek" style="object-position:50% 50%"></a><a class="zoom" href="#about" title="Pengerjaan proyek kelompok"><img src="foto/pengerjaan-proyek-kelompok.jpg" width="1544" height="868" loading="lazy" alt="Pengerjaan proyek kelompok" style="object-position:50% 45%"></a><a class="zoom" href="#about" title="Kegiatan lapangan dengan APD"><img src="foto/kegiatan-lapangan-dengan-apd.jpg" width="720" height="1280" loading="lazy" alt="Kegiatan lapangan dengan APD" style="object-position:50% 50%"></a><a class="zoom" href="#about" title="Pameran karya robot mobil, Wisuda Angkatan XX, 12 Okt 2024"><img src="foto/pameran-karya-robot-mobil-wisuda-ang.jpg" width="900" height="1600" loading="lazy" alt="Pameran karya robot mobil, Wisuda Angkatan XX, 12 Okt 2024" style="object-position:50% 55%"></a><a class="zoom" href="#about" title="Sharing session"><img src="foto/sharing-session.jpg" width="318" height="436" loading="lazy" alt="Sharing session" style="object-position:50% 50%"></a></div>
 </div>
 </div>
@@ -312,48 +314,48 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 <div class="s-grid h-grid">
 <div class="s-left">
 <div class="blk"><span class="dot"></span><div><h3>SMK Negeri 6 Balikpapan, Teknik dan Bisnis Sepeda Motor</h3><div class="d">2019 - 2021</div>
-<ul><li>Mekanik dasar dan kelistrikan kendaraan.</li><li>Perawatan dan pemeliharaan kendaraan sesuai prosedur kerja.</li><li>Disiplin terhadap prosedur kerja (SOP) di lingkungan bengkel.</li></ul></div></div>
+<ul><li>Mempelajari dasar mekanik mesin, sistem kelistrikan, dan perawatan berkala pada kendaraan sepeda motor, termasuk sistem CVT.</li><li>Praktik perawatan dan pemeliharaan kendaraan sesuai prosedur kerja bengkel.</li><li>Dibiasakan disiplin terhadap SOP di lingkungan bengkel.</li></ul></div></div>
 </div>
 <div class="smk-ph"><a class="zoom" href="#smk" title="Bersama teman-teman dan guru di depan gedung SMK Negeri 6 Balikpapan"><img src="foto/bersama-teman-teman-dan-guru-di-depa.jpg" width="704" height="406" loading="lazy" alt="Bersama teman-teman dan guru di depan gedung SMK Negeri 6 Balikpapan"></a><a class="zoom" href="#smk" title="Foto bersama teman-teman dan guru di halaman SMK Negeri 6 Balikpapan"><img src="foto/foto-bersama-teman-teman-dan-guru-di.jpg" width="693" height="414" loading="lazy" alt="Foto bersama teman-teman dan guru di halaman SMK Negeri 6 Balikpapan"></a><a class="zoom" href="#smk" title="Kebersamaan dengan teman sekelas di SMK Negeri 6 Balikpapan"><img src="foto/kebersamaan-dengan-teman-sekelas-di.jpg" width="699" height="412" loading="lazy" alt="Kebersamaan dengan teman sekelas di SMK Negeri 6 Balikpapan"></a></div>
 </div>
 </div></div></section>
-<section class="pg arc rv" id="skills"><div class="wrap"><h2 class="big lg">SKILLS</h2><div class="sub">Kompetensi teknis</div>
+<section class="pg arc rv" id="skills"><div class="wrap"><h2 class="big lg">SKILLS</h2><div class="sub">Kompetensi teknis dan alat kerja</div>
 <div class="skills">
-<article class="sk"><h3>Pengembangan Web</h3><p>Aplikasi web dengan struktur rapi, responsif, basis data, dan keamanan aplikasi.</p><div class="tg"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP Native</span><span>MySQL</span><span>Bootstrap</span></div></article>
-<article class="sk"><h3>Kelistrikan dan Mekanik</h3><p>Pemeliharaan preventif, inspeksi teknis, perawatan peralatan, dan SOP.</p><div class="tg"><span>Teknik Listrik</span><span>Teknik Mekanik</span><span>Preventive Maintenance</span><span>Inspeksi Teknis</span></div></article>
-<article class="sk"><h3>Administrasi dan Data</h3><p>Input data operasional, pengarsipan, pelaporan, dan dokumentasi teknis.</p><div class="tg"><span>Microsoft Excel</span><span>Google Sheets</span><span>Data Entry</span><span>Database</span></div></article>
-<article class="sk"><h3>Jaringan Komputer</h3><p>Instalasi jaringan nirkabel, konfigurasi dasar switch dan router, pengamatan jaringan.</p><div class="tg"><span>Wireless Network</span><span>Switch</span><span>Router</span><span>Troubleshooting</span></div></article>
+<article class="sk"><h3>Pengembangan Web</h3><p>Merancang dan membangun aplikasi web full-stack dengan struktur kode rapi, tampilan responsif, basis data terstruktur, dan pengamanan aplikasi (anti SQL Injection, CSRF, dan XSS).</p><div class="tg"><span>HTML5</span><span>CSS3</span><span>JavaScript</span><span>PHP Native</span><span>MySQL</span><span>Bootstrap</span></div></article>
+<article class="sk"><h3>Kelistrikan dan Mekanik</h3><p>Pemeliharaan preventif dan inspeksi jaringan distribusi 20 kV (gardu, LBS, recloser), verifikasi relay proteksi, serta perawatan komponen mekanik dan kelistrikan kendaraan sesuai SOP.</p><div class="tg"><span>Teknik Listrik</span><span>Teknik Mekanik</span><span>Preventive Maintenance</span><span>Inspeksi Teknis</span></div></article>
+<article class="sk"><h3>Administrasi dan Data</h3><p>Pengelolaan dan rekapitulasi data operasional, penyusunan laporan harian dan bulanan, pengarsipan dokumen, serta pembuatan dashboard monitoring di Google Sheets.</p><div class="tg"><span>Microsoft Excel</span><span>Google Sheets</span><span>Data Entry</span><span>Database</span></div></article>
+<article class="sk"><h3>Jaringan Komputer</h3><p>Perancangan dan simulasi jaringan (Cisco Packet Tracer), instalasi jaringan nirkabel, konfigurasi dasar switch dan router, serta troubleshooting konektivitas.</p><div class="tg"><span>Cisco Packet Tracer</span><span>Wireless Network</span><span>Switch</span><span>Router</span><span>Troubleshooting</span></div></article>
 </div>
-<p class="other"><b>Pelatihan BNSP:</b> Junior Web Developer dan Junior Network Administrator.</p>
+<p class="other"><b>Sertifikasi BNSP:</b> Junior Web Developer (2025) dan Junior Network Administrator (2024).</p>
 </div></section>
 
 
 <section class="pg arc rv" id="experience"><div class="wrap"><div class="slide">
-<div class="s-title"><h2 class="big">EXPERIENCE</h2><span>- Internship</span></div>
+<div class="s-title"><h2 class="big">EXPERIENCE</h2><span>- PLN</span></div>
 <div class="s-grid">
 <div class="s-left">
-<div class="ph-row"><a class="zoom" href="#experience" title="Bersama tim di kantor PLN"><img src="foto/bersama-tim-di-kantor-pln.jpg" width="1280" height="720" loading="lazy" alt="Bersama tim di kantor PLN" style="object-position:center"></a><a class="zoom" href="#experience" title="Pengujian perangkat relay dengan laptop"><img src="foto/pengujian-perangkat-relay-dengan-lap.jpg" width="768" height="1024" loading="lazy" alt="Pengujian perangkat relay dengan laptop" style="object-position:top"></a><a class="zoom" href="#experience" title="Pemeriksaan perangkat relay dan terminalnya"><img src="foto/pemeriksaan-perangkat-relay-dan-term.jpg" width="768" height="1024" loading="lazy" alt="Pemeriksaan perangkat relay dan terminalnya" style="object-position:top"></a></div>
-<div class="blk"><span class="dot"></span><div><h3>PT PLN (Persero), Admin Data Entry</h3><div class="d">Program Magang Multidisiplin, Agu - Des 2025</div>
-<ul><li>Input dan pengelolaan data operasional pemeliharaan dengan Microsoft Office dan Google Sheets untuk mendukung pelaporan tim teknis.</li><li>Merapikan dokumen administratif pemeliharaan agar mudah ditelusuri.</li><li>Mengembangkan SIADA sebagai Tugas Akhir dengan studi kasus PLN UP2D KALTIMRA.</li></ul></div></div>
+<div class="ph-row"><a class="zoom" href="#experience" title="Bersama tim di kantor PLN"><img src="foto/bersama-tim-di-kantor-pln.jpg" width="1280" height="720" loading="lazy" alt="Bersama tim di kantor PLN" style="object-position:center"></a><a class="zoom" href="#experience" title="Pengujian fungsi relay proteksi menggunakan laptop"><img src="foto/pengujian-perangkat-relay-dengan-lap.jpg" width="768" height="1024" loading="lazy" alt="Pengujian fungsi relay proteksi menggunakan laptop" style="object-position:top"></a><a class="zoom" href="#experience" title="Pemeriksaan fisik relay proteksi dan terminal wiring"><img src="foto/pemeriksaan-perangkat-relay-dan-term.jpg" width="768" height="1024" loading="lazy" alt="Pemeriksaan fisik relay proteksi dan terminal wiring" style="object-position:top"></a></div>
+<div class="blk"><span class="dot"></span><div><h3>PT PLN (Persero) UP2D Kaltimra, Admin Data Entry</h3><div class="d">Program Magang Multidisiplin, Agu - Des 2025</div>
+<ul><li>Menyusun daftar Surat Perintah Kerja (SPK) dan mengelola dokumentasi pelaksanaan pekerjaan ke dalam rekapitulasi pemeliharaan.</li><li>Menyusun laporan harian dan bulanan beserta eviden pekerjaan, serta membantu penyusunan dan rekonsiliasi tagihan terhadap rekapitulasi pekerjaan.</li><li>Merancang dashboard monitoring kinerja proteksi berbasis Google Sheets (Top 10 gangguan per penyulang untuk OCR dan GFR, indikator ENS trip dan tembus, filter tahun, bulan, dan jenis gangguan) yang menjadi fondasi pengembangan SIADA.</li><li>Menata arsip dokumen pemeliharaan secara terstruktur agar mudah ditelusuri tim teknis.</li></ul></div></div>
 </div>
 <div class="s-right">
-<div class="blk"><span class="dot"></span><div><h3>PT PLN (Persero), Electrical &amp; Mechanical Engineer Maintenance</h3><div class="d">Program Magang Multidisiplin, Agu - Des 2025</div>
-<ul><li>Pemeliharaan preventif peralatan kelistrikan untuk menjaga keandalan sistem distribusi.</li><li>Teknik pemeliharaan mekanik dan listrik sesuai SOP perusahaan.</li><li>Inspeksi dan perawatan rutin peralatan distribusi bersama tim teknis.</li></ul></div></div>
-<div class="ph-grid"><a class="zoom" href="#experience" title="Pemeliharaan komponen di dalam panel kubikel"><img src="foto/pemeliharaan-komponen-di-dalam-panel.jpg" width="960" height="1280" loading="lazy" alt="Pemeliharaan komponen di dalam panel kubikel" style="object-position:center"></a><a class="zoom" href="#experience" title="Perawatan komponen panel di workshop"><img src="foto/perawatan-komponen-panel-di-workshop.jpg" width="1280" height="960" loading="lazy" alt="Perawatan komponen panel di workshop" style="object-position:center"></a><a class="zoom" href="#experience" title="Pengecekan wiring panel kontrol bersama tim"><img src="foto/pengecekan-wiring-panel-kontrol-bers.jpg" width="960" height="1280" loading="lazy" alt="Pengecekan wiring panel kontrol bersama tim" style="object-position:center"></a><a class="zoom" href="#experience" title="Pengerjaan pemeliharaan pada kubikel"><img src="foto/pengerjaan-pemeliharaan-pada-kubikel.jpg" width="1280" height="960" loading="lazy" alt="Pengerjaan pemeliharaan pada kubikel" style="object-position:center"></a><a class="zoom" href="#experience" title="Inspeksi kubikel dengan lembar checklist"><img src="foto/inspeksi-kubikel-dengan-lembar-check.jpg" width="900" height="1600" loading="lazy" alt="Inspeksi kubikel dengan lembar checklist" style="object-position:top"></a><a class="zoom" href="#experience" title="Pekerjaan jaringan distribusi di lapangan"><img src="foto/pekerjaan-jaringan-distribusi-di-lap.jpg" width="960" height="1280" loading="lazy" alt="Pekerjaan jaringan distribusi di lapangan" style="object-position:center"></a></div>
+<div class="blk"><span class="dot"></span><div><h3>PT PLN (Persero) UP2D Kaltimra, Electrical &amp; Mechanical Maintenance</h3><div class="d">Program Magang Multidisiplin, Agu - Des 2025</div>
+<ul><li>Melaksanakan inspeksi dan pemeliharaan preventif pada jaringan distribusi 20 kV (gardu, Load Break Switch, dan recloser) sesuai SOP dan prosedur keselamatan kerja untuk menjaga keandalan penyaluran listrik.</li><li>Memverifikasi kondisi fisik dan fungsi relay proteksi baru (OCR, GFR, UFR), lalu mendokumentasikan hasil pemeriksaannya per jenis perangkat.</li><li>Berkolaborasi dengan tim teknis dalam perawatan rutin peralatan distribusi, termasuk pemeliharaan komponen panel kubikel dan pengecekan wiring panel kontrol.</li></ul></div></div>
+<div class="ph-grid"><a class="zoom" href="#experience" title="Pemeliharaan komponen di dalam panel kubikel"><img src="foto/pemeliharaan-komponen-di-dalam-panel.jpg" width="960" height="1280" loading="lazy" alt="Pemeliharaan komponen di dalam panel kubikel" style="object-position:center"></a><a class="zoom" href="#experience" title="Perawatan komponen panel di workshop"><img src="foto/perawatan-komponen-panel-di-workshop.jpg" width="1280" height="960" loading="lazy" alt="Perawatan komponen panel di workshop" style="object-position:center"></a><a class="zoom" href="#experience" title="Pengecekan wiring panel kontrol bersama tim"><img src="foto/pengecekan-wiring-panel-kontrol-bers.jpg" width="960" height="1280" loading="lazy" alt="Pengecekan wiring panel kontrol bersama tim" style="object-position:center"></a><a class="zoom" href="#experience" title="Pengerjaan pemeliharaan pada kubikel"><img src="foto/pengerjaan-pemeliharaan-pada-kubikel.jpg" width="1280" height="960" loading="lazy" alt="Pengerjaan pemeliharaan pada kubikel" style="object-position:center"></a><a class="zoom" href="#experience" title="Inspeksi kubikel distribusi dengan lembar checklist"><img src="foto/inspeksi-kubikel-dengan-lembar-check.jpg" width="900" height="1600" loading="lazy" alt="Inspeksi kubikel distribusi dengan lembar checklist" style="object-position:top"></a><a class="zoom" href="#experience" title="Pekerjaan pemeliharaan jaringan distribusi di lapangan"><img src="foto/pekerjaan-jaringan-distribusi-di-lap.jpg" width="960" height="1280" loading="lazy" alt="Pekerjaan pemeliharaan jaringan distribusi di lapangan" style="object-position:center"></a></div>
 </div>
 </div>
-<p class="other"><b>Pengalaman lain:</b> Ayam Geprek Hokky Chicken, Kasir (Sep 2021 - Okt 2022). Melayani transaksi pelanggan, mengelola kas harian, dan merekonsiliasi transaksi di akhir shift.</p>
+<p class="other"><b>Pengalaman lain:</b> Ayam Geprek Hokky Chicken, Kasir (Sep 2021 - Okt 2022). Melayani transaksi pelanggan dengan cepat dan ramah, mengelola kas harian, serta merekonsiliasi kas dengan catatan penjualan di akhir shift, dengan sistem kerja shift.</p>
 </div></div></section>
 <section class="pg arc-l arc rv" id="honda"><div class="wrap"><div class="slide">
-<div class="s-title"><h2 class="big">EXPERIENCE</h2><span>- Internship</span></div>
+<div class="s-title"><h2 class="big">EXPERIENCE</h2><span>- Honda</span></div>
 <div class="s-grid h-grid">
 <div class="s-left" style="gap:22px">
-<div class="blk"><span class="dot"></span><div><h3>PT Honda Tunas Jaya Balikpapan, Teknisi Maintenance</h3><div class="d">Program Magang, Jan - Mar 2020</div>
-<ul><li>Preventive maintenance pada komponen mekanik dan kelistrikan kendaraan.</li><li>Perbaikan dan pemeliharaan peralatan bengkel sesuai prosedur kerja.</li></ul></div></div>
-<div class="blk"><span class="dot"></span><div><h3>PT Honda Tunas Jaya Balikpapan, Admin Data Entry</h3><div class="d">Program Magang, Jan - Mar 2020</div>
-<ul><li>Input data pelanggan.</li><li>Membantu dokumen administratif operasional bengkel.</li></ul></div></div>
+<div class="blk"><span class="dot"></span><div><h3>PT Honda Tunas Jaya Balikpapan, Teknisi Maintenance</h3><div class="d">Program Magang (saat SMK), Jan - Mar 2020</div>
+<ul><li>Membantu servis berkala sepeda motor, meliputi penggantian oli serta preventive maintenance komponen mekanik dan kelistrikan sesuai prosedur bengkel.</li><li>Membantu troubleshooting keluhan kendaraan pelanggan, antara lain pembersihan unit CVT dan pemeriksaan kondisi komponennya, serta pemeliharaan peralatan bengkel.</li></ul></div></div>
+<div class="blk"><span class="dot"></span><div><h3>PT Honda Tunas Jaya Balikpapan, Admin Data Entry</h3><div class="d">Program Magang (saat SMK), Jan - Mar 2020</div>
+<ul><li>Menginput data pelanggan ke dalam sistem secara akurat, meliputi kelengkapan kendaraan (STNK) dan data pemilik kendaraan.</li><li>Membantu dokumentasi operasional bengkel dan proses penagihan servis.</li></ul></div></div>
 </div>
-<div class="h-ph"><a class="zoom" href="#honda" title="Di depan bengkel AHASS Tunas Jaya Balikpapan"><img src="foto/di-depan-bengkel-ahass-tunas-jaya-ba.jpg" width="376" height="532" loading="lazy" alt="Di depan bengkel AHASS Tunas Jaya Balikpapan" style="object-position:center"></a><a class="zoom" href="#honda" title="Praktik perawatan sepeda motor, tahap 1"><img src="foto/praktik-perawatan-sepeda-motor-tahap.jpg" width="268" height="360" loading="lazy" alt="Praktik perawatan sepeda motor, tahap 1"></a><a class="zoom" href="#honda" title="Praktik perawatan sepeda motor, tahap 2"><img src="foto/praktik-perawatan-sepeda-motor-tahap-2.jpg" width="277" height="360" loading="lazy" alt="Praktik perawatan sepeda motor, tahap 2"></a><a class="zoom" href="#honda" title="Praktik perawatan sepeda motor, tahap 3"><img src="foto/praktik-perawatan-sepeda-motor-tahap-3.jpg" width="275" height="360" loading="lazy" alt="Praktik perawatan sepeda motor, tahap 3"></a></div>
+<div class="h-ph"><a class="zoom" href="#honda" title="Di depan bengkel AHASS Tunas Jaya Balikpapan"><img src="foto/di-depan-bengkel-ahass-tunas-jaya-ba.jpg" width="376" height="532" loading="lazy" alt="Di depan bengkel AHASS Tunas Jaya Balikpapan" style="object-position:center"></a><a class="zoom" href="#honda" title="Praktik servis berkala sepeda motor di bengkel Honda (tahap 1)"><img src="foto/praktik-perawatan-sepeda-motor-tahap.jpg" width="268" height="360" loading="lazy" alt="Praktik servis berkala sepeda motor di bengkel Honda, tahap 1"></a><a class="zoom" href="#honda" title="Praktik servis berkala sepeda motor di bengkel Honda (tahap 2)"><img src="foto/praktik-perawatan-sepeda-motor-tahap-2.jpg" width="277" height="360" loading="lazy" alt="Praktik servis berkala sepeda motor di bengkel Honda, tahap 2"></a><a class="zoom" href="#honda" title="Praktik servis berkala sepeda motor di bengkel Honda (tahap 3)"><img src="foto/praktik-perawatan-sepeda-motor-tahap-3.jpg" width="275" height="360" loading="lazy" alt="Praktik servis berkala sepeda motor di bengkel Honda, tahap 3"></a></div>
 </div>
 </div></div></section>
 <section class="pg arc-l arc rv" id="project"><div class="wrap">
@@ -363,15 +365,15 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 <div class="yr">2025 - 2026</div>
 <h3 class="big" style="font-size:clamp(4rem,10vw,7rem);margin-top:10px">SIADA</h3>
 <div class="sub" style="margin-top:2px">Sistem Informasi Otomatisasi Analisa Data Gangguan</div>
-<p style="margin:16px 0 0;color:var(--soft);font-size:.92rem">Aplikasi web full-stack yang membuat analisis data gangguan jaringan distribusi listrik lebih terstruktur, aman, mudah ditelusuri, dan siap dipakai untuk pelaporan.</p>
-<ul class="fp-ul"><li>Import data Excel, dashboard analitik interaktif, laporan otomatis Excel dan PDF.</li><li>Prepared statement (anti-SQL Injection), token CSRF, output escaping (anti-XSS), Content Security Policy, dan header keamanan HTTP.</li><li>Menggabungkan pemahaman kelistrikan dengan pengembangan perangkat lunak.</li></ul>
+<p style="margin:16px 0 0;color:var(--soft);font-size:.92rem">Aplikasi web full-stack yang mengotomatisasi analisis data gangguan jaringan distribusi listrik, dari import data hingga laporan, sehingga hasilnya lebih terstruktur, aman, mudah ditelusuri, dan siap dipakai untuk pelaporan. Berawal dari dashboard monitoring kinerja proteksi di Google Sheets yang saya susun saat magang, lalu saya kembangkan menjadi sistem web utuh.</p>
+<ul class="fp-ul"><li>Fitur utama: import data Excel, dashboard analitik interaktif, dan pelaporan otomatis dalam format Excel dan PDF.</li><li>Keamanan aplikasi berlapis: prepared statement (anti SQL Injection), token CSRF, output escaping (anti XSS), Content Security Policy, dan header keamanan HTTP.</li><li>Memadukan latar belakang kelistrikan dengan rekayasa perangkat lunak, sehingga solusinya relevan dengan kebutuhan operasional industri kelistrikan.</li></ul>
 <div class="tg"><span>PHP Native</span><span>MySQL</span><span>JavaScript</span><span>Full-stack</span><span>Live</span></div>
 <div class="links"><a class="lk fill" href="https://siada-pln.com" target="_blank" rel="noopener noreferrer">Buka siada-pln.com</a><a class="lk" href="https://github.com/holilah182-sudo" target="_blank" rel="noopener noreferrer">GitHub</a></div>
 </div>
 <div class="fp-r">
 <div class="fp-top">
-<a class="zoom fp-ph" href="#project" title="Di PLN UP2D KALTIMRA, menunjukkan SIADA"><img src="foto/siti-holilah-menunjukkan-siada-di-la.jpg" width="720" height="720" loading="lazy" alt="Siti Holilah menunjukkan SIADA di laptop bersama staf PLN UP2D KALTIMRA"></a>
-<a class="zoom fp-ph" href="#project" title="Pengujian dan pengerjaan SIADA bersama tim"><img src="foto/kolase-pengerjaan-dan-pengujian-siad.jpg" width="792" height="800" loading="lazy" alt="Kolase pengerjaan dan pengujian SIADA di kantor PLN"></a>
+<a class="zoom fp-ph" href="#project" title="Mendemonstrasikan SIADA kepada staf PLN UP2D KALTIMRA"><img src="foto/siti-holilah-menunjukkan-siada-di-la.jpg" width="720" height="720" loading="lazy" alt="Mendemonstrasikan SIADA kepada staf PLN UP2D KALTIMRA"></a>
+<a class="zoom fp-ph" href="#project" title="Proses pengerjaan dan pengujian SIADA di kantor PLN"><img src="foto/kolase-pengerjaan-dan-pengujian-siad.jpg" width="792" height="800" loading="lazy" alt="Proses pengerjaan dan pengujian SIADA di kantor PLN"></a>
 </div>
 <div class="lap"><div class="bez"><a class="zoom view" href="#project" id="lapv" title="Tampilan SIADA"><img id="lapi" src="foto/tampilan-siada.png" width="823" height="320" alt="Tampilan SIADA"></a></div><div class="base"></div></div>
 <div class="thumbs" role="tablist">
@@ -383,9 +385,9 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 </div>
 <div class="sec"><h2>Kompetisi inovasi dan kewirausahaan</h2></div>
 <div class="grid3" style="margin-top:14px">
-<article class="cp"><div class="m">Krenova Kota Balikpapan 2025, kategori Mahasiswa</div><h3>Tongkat Cerdas</h3><p>Alat bantu jalan tunanetra berbasis Arduino Uno: sensor ultrasonik HC-SR04 mendeteksi hambatan, sensor rain drop mendeteksi kondisi basah, GPS u-blox Neo 6M membantu pelacakan lokasi.</p><div class="tg"><span>Arduino</span><span>IoT</span><span>GPS</span></div></article>
-<article class="cp"><div class="m">P2MW Kemendikbudristek 2025</div><h3>Fish Grow</h3><p>Rancangan usaha pakan ikan dari limbah ikan dengan mesin pencacah tenaga surya, solusi budidaya perikanan berkelanjutan. Tim lima orang.</p><div class="tg"><span>Kewirausahaan</span><span>Energi surya</span></div></article>
-<article class="cp"><div class="m">KPP Mining Youth in Action 2024</div><h3>SMARTCOM</h3><p>Smart Composer, solusi ramah lingkungan yang mengolah sampah daun menjadi kompos agar limbah organik dimanfaatkan kembali.</p><div class="tg"><span>Proyek sosial</span><span>Lingkungan</span></div></article>
+<article class="cp"><div class="m">Krenova Kota Balikpapan 2025, kategori Mahasiswa</div><h3>Tongkat Cerdas</h3><p>Alat bantu jalan bagi penyandang tunanetra berbasis Arduino Uno. Sensor ultrasonik HC-SR04 mendeteksi hambatan, sensor rain drop mengenali permukaan basah, dan modul GPS u-blox Neo-6M membantu pelacakan lokasi.</p><div class="tg"><span>Arduino</span><span>IoT</span><span>GPS</span></div></article>
+<article class="cp"><div class="m">P2MW Kemendikbudristek 2025</div><h3>Fish Grow</h3><p>Rancangan usaha pakan ikan dari limbah ikan yang diolah dengan mesin pencacah bertenaga surya, sebagai solusi budidaya perikanan yang berkelanjutan dan hemat energi. Dikerjakan dalam tim lima orang.</p><div class="tg"><span>Kewirausahaan</span><span>Energi surya</span></div></article>
+<article class="cp"><div class="m">KPP Mining Youth in Action 2024</div><h3>SMARTCOM</h3><p>Smart Composer, solusi ramah lingkungan yang mengolah sampah daun menjadi kompos agar limbah organik kembali bermanfaat.</p><div class="tg"><span>Proyek sosial</span><span>Lingkungan</span></div></article>
 </div>
 
 <div class="sec"><h2>Video proyek</h2></div>
@@ -395,12 +397,12 @@ footer{padding:26px 0 40px;color:var(--soft);text-align:center;font-size:.8rem}
 <article class="vcard" data-id="WVg5eZ-0DA4"><a class="thumb" href="https://www.youtube.com/watch?v=WVg5eZ-0DA4" target="_blank" rel="noopener noreferrer" aria-label="Tonton video proyek 3" style="background-image:url('https://i.ytimg.com/vi/WVg5eZ-0DA4/hqdefault.jpg')"><span class="play" aria-hidden="true">&#9654;</span></a><div class="vb"><h3>Video Proyek 3</h3><a class="lk" href="https://www.youtube.com/watch?v=WVg5eZ-0DA4" target="_blank" rel="noopener noreferrer">Tonton di YouTube</a></div></article>
 </div>
 
-<div class="doc"><div><div class="m" style="color:var(--mid);font-weight:700;font-size:.8rem">Google Sheets</div><h3>Report Documentation</h3><p>Pengelolaan laporan magang, laporan aktivitas pemeliharaan harian, dan rekap bulanan.</p></div>
+<div class="doc"><div><div class="m" style="color:var(--mid);font-weight:700;font-size:.8rem">Google Sheets</div><h3>Dokumentasi Laporan Saat Pelaksanaan Magang</h3><p>Kumpulan laporan yang dikerjakan saat magang, laporan aktivitas pemeliharaan harian, dan rekapitulasi bulanan yang disusun terstruktur agar mudah ditelusuri.</p></div>
 <a class="lk fill" href="https://docs.google.com/spreadsheets/d/14rFwTvXOMZn-NmEHc40VzisBaGkReq4_vXuWCLBEcyc/edit?usp=sharing" target="_blank" rel="noopener noreferrer">Buka laporan</a></div>
 </div></section>
 
 <section class="pg arc rv" id="contact"><div class="wrap">
-<h2 class="big lg">MEDIA SOSIAL</h2><div class="sub">Terbuka untuk peran teknik kelistrikan dan mekanik, administrasi data, pengembangan web, dan IT support.</div>
+<h2 class="big lg">MEDIA SOSIAL</h2><div class="sub">Terbuka untuk peluang di bidang teknik kelistrikan dan mekanik, administrasi data, pengembangan web, dan IT support. Mari terhubung dan berdiskusi.</div>
 <div class="soc">
 <a class="dev" href="https://www.linkedin.com/in/sitiholilah-" target="_blank" rel="noopener noreferrer" aria-label="Buka LinkedIn Siti Holilah">
 <div class="phone"><img class="scr" src="foto/tampilan-profil-linkedin-siti-holila.png" width="298" height="817" loading="lazy" alt="Tampilan profil LinkedIn Siti Holilah"></div>
