@@ -401,8 +401,9 @@ card.querySelector(".thumb").setAttribute("aria-label","Tonton video: "+d.title)
 }).catch(()=>{});
 });
 document.querySelectorAll(".thumbs button").forEach(b=>b.addEventListener("click",()=>{document.getElementById("lapi").src=b.dataset.src;document.querySelectorAll(".thumbs button").forEach(x=>x.classList.toggle("on",x===b))}));
-document.addEventListener("error",e=>{if(e.target.tagName==="IMG")e.target.classList.add("x")},true);
-document.querySelectorAll("img").forEach(i=>{if(i.complete&&!i.naturalWidth)i.classList.add("x")});
+document.addEventListener("error",e=>{if(e.target.tagName==="IMG"&&e.target.getAttribute("src"))e.target.classList.add("x")},true);
+document.addEventListener("load",e=>{if(e.target.tagName==="IMG")e.target.classList.remove("x")},true);
+document.querySelectorAll("img[src]").forEach(i=>{if(i.complete&&!i.naturalWidth&&i.loading!=="lazy")i.classList.add("x")});
 </script>
 </body>
 </html>
